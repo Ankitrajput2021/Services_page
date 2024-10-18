@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .bg-triangle {
+            background: linear-gradient(340deg , #ffffff 50% , #3f0071 50%);
+        }
+
+        .card {
+            transition: transform 0.6s ease-in-out;
+            position: relative;
+            padding-top: 3.5rem;
+        }
+
+        .icon-container {
+            position: absolute;
+            top: -2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: rotateY(360deg);
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        p, a {
+            font-weight: 400;
+        }
+        .heading {
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div id="assignment" class="py-12 bg-triangle">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-white text-3xl font-bold heading">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="icon-container">
+                        <i class="fas fa-bell text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2 mt-6">Emergency Plumbing Services</h3>
+                    <p class="text-center text-gray-600">Our plumbers are ready to go 24/7 for emergencies – including nights, weekends and holidays.</p>
+                    <div class="text-center mt-4">
+                        <a href="" class="text-purple-600 font-semibold">Explore this Service</a>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="icon-container">
+                        <i class="fas fa-wrench text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2 mt-6">Plumbing and Drains</h3>
+                    <p class="text-center text-gray-600">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                    <div class="text-center mt-4">
+                        <a href="" class="text-purple-600 font-semibold">Explore this Service</a>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="icon-container">
+                        <i class="fas fa-water text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2 mt-6">Water Damage</h3>
+                    <p class="text-center text-gray-600">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                    <div class="text-center mt-4">
+                        <a href="" class="text-purple-600 font-semibold">Explore this Service</a>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="icon-container">
+                        <i class="fas fa-burn text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2 mt-6">Water Heaters</h3>
+                    <p class="text-center text-gray-600">Trust Roto-Rooter for repair and replacement of gas, electric and tankless water heaters.</p>
+                    <div class="text-center mt-4">
+                        <a href="" class="text-purple-600 font-semibold">Explore this Service</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
